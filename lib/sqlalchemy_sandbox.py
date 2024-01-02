@@ -12,9 +12,6 @@ class Student(Base):
     name = Column(String())
 
 
-
-
-
 if __name__ == '__main__':
     engine = create_engine("sqlite:///students.db")
     Base.metadata.create_all(engine)
